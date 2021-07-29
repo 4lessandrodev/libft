@@ -2,3 +2,4 @@ en.subject.pdf
 .vscode/
 a.out
 *.out
+/tests
