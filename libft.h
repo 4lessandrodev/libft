@@ -25,3 +25,11 @@ int	ft_isalnum(int c);
  * @return int 1 if is ascii else 0
 */
 int	ft_isascii(int c);
+
+
+/**
+ * @brief this function receives an int and check if it is printable 32 to 126
+ * @param c int
+ * @return int 1 if is printable else 0
+*/
+int	ft_isprint(int c);
