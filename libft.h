@@ -33,3 +33,10 @@ int	ft_isascii(int c);
  * @return int 1 if is printable else 0
 */
 int	ft_isprint(int c);
+
+/**
+ * @brief this function receives a string pointer and count each char
+ * @param s as string pointer
+ * @return int size of string
+*/
+int	ft_strlen(const char *s);

@@ -1,0 +1,26 @@
+✔ isalpha @done(21-07-30 19:59)
+✔ isdigit @done(21-07-30 20:00)
+✔ isalnum @done(21-07-30 20:00)
+✔ isascii @done(21-07-30 20:00)
+✔ isprint @done(21-07-30 20:00)
+☐ strlen
+☐ memset
+☐ bzero
+☐ memcpy
+☐ memmove
+☐ strlcpy
+☐ strlcat
+☐ toupper
+☐ tolower
+☐ strchr
+☐ strrchr
+☐ strncmp
+☐ memchr
+☐ memcmp
+☐ strnstr
+☐ atoi
+
+You must also re-code the following functions, using the function “malloc”:
+
+☐ calloc
+☐ strdup
