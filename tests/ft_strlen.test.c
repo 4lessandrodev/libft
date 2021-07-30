@@ -30,12 +30,26 @@ static char *should_return_20(){
 	return 0;
 }
 
+static char *should_return_6(){
+	char value[7];
+	value[0] = 1;
+	value[1] = '8';
+	value[2] = '@';
+	value[3] = '&';
+	value[4] = ' ';
+	value[5] = 'a';
+	value[6] = '\0';
+	mu_assert("error, hello_t != 7", ft_strlen(value) == 6);
+	return 0;
+}
+
 static char *all_tests() {
 	mu_run_test(should_return_5);
 	mu_run_test(should_return_0);
 	mu_run_test(should_return_1);
 	mu_run_test(should_return_20);
 	mu_run_test(should_return_11);
+	mu_run_test(should_return_6);
 	return 0;
 }
 
