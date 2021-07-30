@@ -10,4 +10,4 @@ Util lib in C
  ## How to run
 
  - `$ cd tests`
- - `$ run_tests.sh`
+ - `$ ./run_tests.sh`
