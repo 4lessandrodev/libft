@@ -42,11 +42,7 @@ static char *should_copy_only_1_char(){
 	ft_memcpy(dest, str, 6);
 
 	mu_assert("error, dest[0] != A", dest[0] == 'A');
-	mu_assert("error, dest[1] != 0", dest[1] == '0');
-	mu_assert("error, dest[2] != 0", dest[2] == '0');
-	mu_assert("error, dest[3] != 0", dest[3] == '0');
-	mu_assert("error, dest[4] != 0", dest[4] == '0');
-	mu_assert("error, dest[5] != end", dest[5] == '\0');
+	mu_assert("error, dest[1] != 0", dest[1] == '\0');
 	return 0;
 }
 
