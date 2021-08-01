@@ -6,7 +6,7 @@
 ✔ strlen @done(21-07-30 20:53)
 ✔ memset @done(21-07-30 21:50)
 ✔ bzero @done(21-07-31 21:50)
-☐ memcpy
+✔ memcpy @done(21-07-31 22:49)
 ☐ memmove
 ☐ strlcpy
 ☐ strlcat

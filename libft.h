@@ -57,6 +57,15 @@ void	*ft_memset(char *str, int c, unsigned long size_t);
  *
  * @param char *str This is a pointer to the block of memory to fill.
  * @param size_t n This is the number of bytes to be set to the value.
- *
 */
 void	*ft_bzero(char *str, unsigned long size_t);
+
+/**
+ * @brief function copies n bytes from memory area src to memory area dest.  The memory areas must not overlap.
+ *
+ * @param char *dest This is a pointer to destination
+ * @param char *src This is a pointer to source value
+ * @param size_t n This is the number of bytes to be set to the value.
+ * @returns a pointer to dest
+*/
+void	*ft_memcpy(char *dest, const char *src, unsigned long size_t);

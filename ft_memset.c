@@ -10,4 +10,5 @@ void	*ft_memset(char *str, int c, unsigned long size_t)
 		str[limit] = (char)c;
 		limit++;
 	}
+	return (str);
 }

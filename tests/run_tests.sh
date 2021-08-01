@@ -26,3 +26,6 @@ gcc ./ft_memset.test.c ../ft_memset.c
 
 gcc ./ft_bzero.test.c ../ft_bzero.c
 ./a.out && rm -rf ./a.out
+
+gcc ./ft_memcpy.test.c ../ft_memcpy.c
+./a.out && rm -rf ./a.out
