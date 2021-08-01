@@ -20,3 +20,9 @@ gcc ./ft_isprint.test.c ../ft_isprint.c
 
 gcc ./ft_strlen.test.c ../ft_strlen.c
 ./a.out && rm -rf ./a.out
+
+gcc ./ft_memset.test.c ../ft_memset.c
+./a.out && rm -rf ./a.out
+
+gcc ./ft_bzero.test.c ../ft_bzero.c
+./a.out && rm -rf ./a.out
