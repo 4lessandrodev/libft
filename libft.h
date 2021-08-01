@@ -1,3 +1,7 @@
+# include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
+
 /**
  * @brief this function receives an int value and check if it is an alphabet letter based on ascii code
  * @param c int
@@ -50,15 +54,15 @@ int	ft_strlen(const char *s);
  *
  * @see https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
 */
-void	*ft_memset(char *str, int c, unsigned long size_t);
+void	*ft_memset(void *str, int c, size_t n);
 
 /**
  * @brief function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeroes (bytes containing '\0') to that area.
  *
- * @param char *str This is a pointer to the block of memory to fill.
+ * @param void *str This is a pointer to the block of memory to fill.
  * @param size_t n This is the number of bytes to be set to the value.
 */
-void	*ft_bzero(char *str, unsigned long size_t);
+void	*ft_bzero(void *str, size_t n);
 
 /**
  * @brief function copies n bytes from memory area src to memory area dest.  The memory areas must not overlap.
@@ -68,4 +72,13 @@ void	*ft_bzero(char *str, unsigned long size_t);
  * @param size_t n This is the number of bytes to be set to the value.
  * @returns a pointer to dest
 */
-void	*ft_memcpy(char *dest, const char *src, unsigned long size_t);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+
+/**
+ * @brief function copies n characters from src to dest, but for overlapping memory blocks, memmove() is a safer approach than memcpy().
+ * @param void *dest − This is a pointer to the destination array where the content is to be copied, type-casted to a pointer of type void*.
+ * @param void const *src − This is a pointer to the source of data to be copied, type-casted to a pointer of type void*.
+ * @param int n − This is the number of bytes to be copied.
+ * @returns This function returns a pointer to the destination, which is dest.
+*/
+void	*ft_memmove(void *dest, const void *src, size_t n);

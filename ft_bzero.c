@@ -1,11 +1,15 @@
-void	*ft_bzero(char *str, unsigned long size_t)
-{
-	int	limit;
+#include "libft.h"
 
+void	*ft_bzero(void *str, size_t n)
+{
+	int		limit;
+	char	*pointer;
+
+	pointer = (char *)str;
 	limit = 0;
-	while (limit < size_t && str[limit] != '\0')
+	while (limit < n && pointer[limit] != '\0')
 	{
-		str[limit] = '0';
+		pointer[limit] = '0';
 		limit++;
 	}
 }
