@@ -40,3 +40,23 @@ int	ft_isprint(int c);
  * @return int size of string
 */
 int	ft_strlen(const char *s);
+
+/**
+ * @brief copies the character c (an unsigned char) to the first n characters of the string pointed to, by the argument str.
+
+ * @param char *str This is a pointer to the block of memory to fill.
+ * @param int c This is the value to be set. The value is passed as an int, but the function fills the block of memory using the unsigned char conversion of this value.
+ * @param size_t n This is the number of bytes to be set to the value.
+ *
+ * @see https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
+*/
+void	*ft_memset(char *str, int c, unsigned long size_t);
+
+/**
+ * @brief function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeroes (bytes containing '\0') to that area.
+ *
+ * @param char *str This is a pointer to the block of memory to fill.
+ * @param size_t n This is the number of bytes to be set to the value.
+ *
+*/
+void	*ft_bzero(char *str, unsigned long size_t);

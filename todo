@@ -3,9 +3,9 @@
 ✔ isalnum @done(21-07-30 20:00)
 ✔ isascii @done(21-07-30 20:00)
 ✔ isprint @done(21-07-30 20:00)
-☐ strlen
-☐ memset
-☐ bzero
+✔ strlen @done(21-07-30 20:53)
+✔ memset @done(21-07-30 21:50)
+✔ bzero @done(21-07-31 21:50)
 ☐ memcpy
 ☐ memmove
 ☐ strlcpy
