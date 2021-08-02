@@ -9,6 +9,12 @@ static char *should_return_5(){
 	char dest[] = "yy";
 	char src[] = "xxxxx";
 	mu_assert("error, dest != xxxxx", ft_strlcpy(dest, src, 5) == 5);
+	mu_assert("error, dest[0] != x", dest[0] == 'x');
+	mu_assert("error, dest[1] != x", dest[1] == 'x');
+	mu_assert("error, dest[2] != x", dest[2] == 'x');
+	mu_assert("error, dest[3] != x", dest[3] == 'x');
+	mu_assert("error, dest[4] != x", dest[4] == 'x');
+	mu_assert("error, dest[5] != end", dest[5] == '\0');
 	return 0;
 }
 
@@ -16,16 +22,18 @@ static char *should_return_0(){
 	char dest[1];
 	char src[4] = "bbb";
 	int result = ft_strlcpy(dest, src, 1);
-	mu_assert("error, dest != b", result == 1);
+	mu_assert("error, dest != b", result == 3);
 	mu_assert("error, dest[0] != b", dest[0] == 'b');
+	mu_assert("error, dest[1] != end", dest[1] == '\0');
 	return 0;
 }
 
 static char *should_return_1(){
 	char dest[] = "1";
 	char src[] = "330";
-	mu_assert("error, dest != 3", ft_strlcpy(dest, src, 1) == 1);
+	mu_assert("error, dest != 3", ft_strlcpy(dest, src, 1) == 3);
 	mu_assert("error, dest[0] != 3", dest[0] == '3');
+	mu_assert("error, dest[1] != end", dest[1] == '\0');
 	return 0;
 }
 
