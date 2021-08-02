@@ -7,28 +7,28 @@
  * @param c int
  * @return int 1 if is alphabet else 0
 */
-int	ft_isalpha(int c);
+int		ft_isalpha(int c);
 
 /**
  * @brief this function receives an int and check if it is a number based on ascii code
  * @param c int
  * @return int 1 if is digit else 0
 */
-int	ft_isdigit(int c);
+int		ft_isdigit(int c);
 
 /**
  * @brief this function receives an int and check if it is alphanumeric based on ascii code
  * @param c int
  * @return int 1 if is alphanumeric else 0
 */
-int	ft_isalnum(int c);
+int		ft_isalnum(int c);
 
 /**
  * @brief this function receives an int and check if it is ascii 0 to 120
  * @param c int
  * @return int 1 if is ascii else 0
 */
-int	ft_isascii(int c);
+int		ft_isascii(int c);
 
 
 /**
@@ -36,14 +36,14 @@ int	ft_isascii(int c);
  * @param c int
  * @return int 1 if is printable else 0
 */
-int	ft_isprint(int c);
+int		ft_isprint(int c);
 
 /**
  * @brief this function receives a string pointer and count each char
  * @param s as string pointer
  * @return int size of string
 */
-int	ft_strlen(const char *s);
+int		ft_strlen(const char *s);
 
 /**
  * @brief copies the character c (an unsigned char) to the first n characters of the string pointed to, by the argument str.
@@ -82,3 +82,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
  * @returns This function returns a pointer to the destination, which is dest.
 */
 void	*ft_memmove(void *dest, const void *src, size_t n);
+
+/**
+ * @brief function copies up to size - 1 characters from the NUL-terminated string src to dest, NUL-terminating the result.
+ * @param char *dest pointer for destination
+ * @param const char *src pointer string to copy
+ * @param size_t size length of destination
+ * @returns return the total length of the string they tried to create. that means the length of src.
+ */
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);

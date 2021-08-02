@@ -32,3 +32,6 @@ gcc ./ft_memcpy.test.c ../ft_memcpy.c
 
 gcc ./ft_memmove.test.c ../ft_memmove.c
 ./a.out && rm -rf ./a.out
+
+gcc ./ft_strlcpy.test.c ../ft_strlcpy.c ../ft_strlen.c
+./a.out && rm -rf ./a.out

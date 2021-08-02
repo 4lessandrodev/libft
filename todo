@@ -7,8 +7,8 @@
 ✔ memset @done(21-07-30 21:50)
 ✔ bzero @done(21-07-31 21:50)
 ✔ memcpy @done(21-07-31 22:49)
-☐ memmove
-☐ strlcpy
+✔ memmove @done(21-08-01 19:36)
+✔ strlcpy @done(21-08-01 20:52)
 ☐ strlcat
 ☐ toupper
 ☐ tolower
