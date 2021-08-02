@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "\n[NORMINETTE]:"
-norminette ../ft_*.c
+norminette ../ft_*.c ../*.h
 
 gcc ./ft_isalpha.test.c ../ft_isalpha.c
 ./a.out && rm -rf ./a.out
