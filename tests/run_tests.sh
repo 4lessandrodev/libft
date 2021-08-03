@@ -38,3 +38,9 @@ gcc ./ft_strlcpy.test.c ../ft_strlcpy.c ../ft_strlen.c
 
 gcc ./ft_strlcat.test.c ../ft_strlcat.c ../ft_strlen.c
 ./a.out && rm -rf ./a.out
+
+gcc ./ft_tolower.test.c ../ft_tolower.c
+./a.out && rm -rf ./a.out
+
+gcc ./ft_toupper.test.c ../ft_toupper.c
+./a.out && rm -rf ./a.out

@@ -115,4 +115,22 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 */
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
+/**
+ * @brief  These functions convert lowercase letters to uppercase, and
+ * vice versa.
+ * @param int c as character base ascii code
+ * @returns int c as upper char base ascii code if is possible else
+ * return the same int received
+*/
+int		ft_toupper(int c);
+
+/**
+ * @brief  These functions convert upprcase letters to lowercase, and
+ * vice versa.
+ * @param int c as character base ascii code
+ * @returns int c as lower char base ascii code if is possible else
+ * return the same int received
+*/
+int		ft_tolower(int c);
+
 #endif
