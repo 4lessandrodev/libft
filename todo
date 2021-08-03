@@ -9,7 +9,7 @@
 ✔ memcpy @done(21-07-31 22:49)
 ✔ memmove @done(21-08-01 19:36)
 ✔ strlcpy @done(21-08-01 20:52)
-☐ strlcat
+✔ strlcat @done(21-08-03 01:04)
 ☐ toupper
 ☐ tolower
 ☐ strchr
