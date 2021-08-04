@@ -133,4 +133,14 @@ int		ft_toupper(int c);
 */
 int		ft_tolower(int c);
 
+/**
+ * @brief  function returns a pointer to the first occurrence of the
+ * character c in the string s.
+ * @param const char *s as pointer to string
+ * @param int c as integer to char to find on string base ascii code
+ * @returns a pointer to the first occurrence of the
+ * character c in the string s.
+*/
+char	*ft_strchr(const char *s, int c);
+
 #endif
