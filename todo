@@ -13,7 +13,7 @@
 ✔ toupper @done(21-08-03 20:19)
 ✔ tolower @done(21-08-03 20:19)
 ✔ strchr @done(21-08-03 21:31)
-☐ strrchr
+✔ strrchr @done(21-08-04 21:41)
 ☐ strncmp
 ☐ memchr
 ☐ memcmp

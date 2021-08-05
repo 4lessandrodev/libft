@@ -47,3 +47,6 @@ gcc ./ft_toupper.test.c ../ft_toupper.c
 
 gcc ./ft_strchr.test.c ../ft_strchr.c
 ./a.out && rm -rf ./a.out
+
+gcc ./ft_strrchr.test.c ../ft_strrchr.c ../ft_strlen.c
+./a.out && rm -rf ./a.out
