@@ -153,4 +153,18 @@ char	*ft_strchr(const char *s, int c);
 */
 char	*ft_strrchr(const char *s, int c);
 
+/**
+ * @brief The strcmp() function compares the two strings s1 and s2
+ * It returns an integer less than, equal to, or greater
+ * than zero if s1 is found,
+ * respectively, to be less than, to match, or be greater than s2.
+ * @param const char *s1 pointer to string
+ * @param const char *s2 pointer to string
+ * @param size_t n bytes to compare of s1 and s2.
+ * @returns int as integer less than, equal to,
+ * or greater than zero if s1 (or the first n bytes thereof) is found,
+ * respectively, to be less  than,  to match, or be greater than s2
+*/
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+
 #endif

@@ -50,3 +50,6 @@ gcc ./ft_strchr.test.c ../ft_strchr.c
 
 gcc ./ft_strrchr.test.c ../ft_strrchr.c ../ft_strlen.c
 ./a.out && rm -rf ./a.out
+
+gcc ./ft_strncmp.test.c ../ft_strncmp.c
+./a.out && rm -rf ./a.out
