@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: allima-d <allima-d@student.42sp.br>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/29 01:47:55 by allima-d          #+#    #+#             */
+/*   Updated: 2022/01/29 01:48:17 by allima-d         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -125,7 +137,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_toupper(int c);
 
 /**
- * @brief  These functions convert upprcase letters to lowercase, and
+ * @brief  These functions convert uppercase letters to lowercase, and
  * vice versa.
  * @param int c as character base ascii code
  * @returns int c as lower char base ascii code if is possible else
