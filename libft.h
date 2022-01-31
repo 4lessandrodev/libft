@@ -6,7 +6,7 @@
 /*   By: allima-d <allima-d@student.42sp.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 01:47:55 by allima-d          #+#    #+#             */
-/*   Updated: 2022/01/29 01:48:17 by allima-d         ###   ########.fr       */
+/*   Updated: 2022/01/30 23:01:31 by allima-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -178,5 +178,15 @@ char	*ft_strrchr(const char *s, int c);
  * respectively, to be less  than,  to match, or be greater than s2
 */
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+
+/**
+ * @brief function scans the initial n bytes of the memory area pointed to by s for the first instance of c.
+ * 
+ * @param s pointer to string
+ * @param c element to match as char or int
+ * @param n number of bytes to be scanned
+ * @return void* 
+ */
+void 	*ft_memchr(const void *s, int c, size_t n);
 
 #endif

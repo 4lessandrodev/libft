@@ -15,7 +15,7 @@
 ✔ strchr @done(21-08-03 21:31)
 ✔ strrchr @done(21-08-04 21:41)
 ✔ strncmp @done(21-08-04 22:20)
-☐ memchr
+✔ memchr @done(22-01-30 23:50)
 ☐ memcmp
 ☐ strnstr
 ☐ atoi
