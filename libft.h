@@ -6,7 +6,7 @@
 /*   By: allima-d <allima-d@student.42sp.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 01:47:55 by allima-d          #+#    #+#             */
-/*   Updated: 2022/01/30 23:01:31 by allima-d         ###   ########.fr       */
+/*   Updated: 2022/01/31 22:19:02 by allima-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -188,5 +188,19 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
  * @return void* 
  */
 void 	*ft_memchr(const void *s, int c, size_t n);
+
+/**
+ * @brief function returns an integer less than, equal to, 
+ * or greater than zero if the first n bytes of s1 is found,
+ * respectively, to be less than, to match, or be greater than the first n bytes of s2.
+ * function compares the first n bytes (each interpreted as unsigned char) of the memory areas s1 and s2.
+ * @param s1 unsigned char of the memory
+ * @param s2 unsigned char) of the memory areas s1 and s2
+ * @param n the first n bytes
+ * @return int For a nonzero return value, the sign is determined by the sign of the difference between the first pair
+ * of bytes (interpreted as unsigned char) that differ in s1 and s2.
+ * If n is zero, the return value is zero.
+ */
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif
