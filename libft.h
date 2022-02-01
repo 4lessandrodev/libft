@@ -6,7 +6,7 @@
 /*   By: allima-d <allima-d@student.42sp.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 01:47:55 by allima-d          #+#    #+#             */
-/*   Updated: 2022/01/31 22:19:02 by allima-d         ###   ########.fr       */
+/*   Updated: 2022/01/31 23:01:43 by allima-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -202,5 +202,25 @@ void 	*ft_memchr(const void *s, int c, size_t n);
  * If n is zero, the return value is zero.
  */
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
+/**
+ * @brief function locates the	first occurrence of the	null-termi-nated
+ * string little in the string big, where not more than len characters are searched.
+ * Characters that appear after a `\0'	character are not searched.
+ * 
+ * @param big 
+ * @param little 
+ * @param len 
+ * @return char* 
+ */
+char	*ft_strnstr(const char *big, const char *little, size_t n);
+
+/**
+ * @brief unction converts the initial portion of the string pointed to by nptr to int.
+ * 
+ * @param str string
+ * @return int as the converted value.
+ */
+int		ft_atoi(const char *str);
 
 #endif

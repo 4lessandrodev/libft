@@ -1,31 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: allima-d <allima-d@student.42sp.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/31 23:24:03 by allima-d          #+#    #+#             */
-/*   Updated: 2022/01/31 23:24:06 by allima-d         ###   ########.fr       */
+/*   Created: 2022/01/31 23:20:17 by allima-d          #+#    #+#             */
+/*   Updated: 2022/01/31 23:21:52 by allima-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_atoi(const char *str)
 {
-	size_t			i;
-	unsigned char	*xs1;
-	unsigned char	*xs2;
+	int	s;
+	int	i;
+	int	res;
 
+	s = 1;
 	i = 0;
-	xs1 = (unsigned char *) s1;
-	xs2 = (unsigned char *) s2;
-	while (i < n)
+	res = 0;
+	while (str[i] == '\t' || str[i] == ' ' || str[i] == '\r'
+		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\n')
+			i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (xs1[i] != xs2[i])
-			return (xs1[i] - xs2[i]);
+		if (str[i] == '-')
+		{
+				s *= -1;
+		}
 		i++;
 	}
-	return (0);
+	while (ft_isdigit(str[i]))
+	{
+		res = res * 10 + (str[i] - 48);
+		i++;
+	}
+	return (res * s);
 }

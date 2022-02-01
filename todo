@@ -17,8 +17,8 @@
 ✔ strncmp @done(21-08-04 22:20)
 ✔ memchr @done(22-01-30 23:50)
 ✔ memcmp @done(22-01-31 22:31)
-☐ strnstr
-☐ atoi
+✔ strnstr @done(22-01-31 22:57)
+✔ atoi @done(22-01-31 23:22)
 
 You must also re-code the following functions, using the function “malloc”:
 
