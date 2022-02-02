@@ -24,3 +24,15 @@ You must also re-code the following functions, using the function “malloc”:
 
 ✔ calloc @done(22-02-01 22:46)
 ✔ strdup @done(22-02-01 22:56)
+
+✔ ft_substr @done(22-02-01 23:37)
+☐ ft_strjoin
+☐ ft_strtrim
+☐ ft_split
+☐ ft_itoa
+☐ ft_strmapi
+☐ ft_striteri
+☐ ft_putchar_fd
+☐ ft_putstr_fd
+☐ ft_putendl_fd
+☐ ft_putnbr_fd
