@@ -22,5 +22,5 @@
 
 You must also re-code the following functions, using the function “malloc”:
 
-☐ calloc
-☐ strdup
+✔ calloc @done(22-02-01 22:46)
+✔ strdup @done(22-02-01 22:56)
